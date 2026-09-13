@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/736x/be/b1/d0/beb1d04d91f7a6adde6e8494e3946c39.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: rgb(226, 232, 240);
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+
+}
+
+
+header { 
+    background-color: rgba(8, 18, 28, 0.92); 
+    color: rgb(226, 232, 240); 
+
+    width: 100%; 
+    margin: 0; 
+    padding: 1rem; 
+ 
+    min-height: 50vh; 
+}
+
+nav {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.875rem;
+
+    list-style: none;
+}
+
+nav a {
+    color: rgb(203, 213, 225);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(71, 85, 105);
+    text-decoration: underline;
+}
+
+nav a:focus {
+    outline: 0.125rem solid rgb(71, 85, 105);
+}
+
+
+h1 {
+    color: rgb(226, 232, 240);
+    font-size: 2.5rem;
+
+    text-align: left;
+    margin-top: 2rem;
+}
+
+header h2 {
+    color: rgb(203, 213, 225);
+    font-size: 1.3rem;
+
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+
+section {
+    width: 90%;
+
+    margin: 2.5rem auto;
+    padding: 2rem;
+
+    background: linear-gradient(
+        to right,
+        rgba(15, 42, 42, 0.60),
+        rgba(30, 58, 70, 0.60),
+        rgba(51, 65, 85, 0.60)
+    );
+    color: rgb(226, 232, 240);
+
+    border: 0.30rem solid rgb(71, 85, 105);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    transition: 0.3s;
+    border-radius: 2rem;
+
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+
+article {
+    background-color: rgba(15, 23, 42, 0.85);
+    color: rgb(226, 232, 240);
+
+    padding: 1.25rem;
+    margin: 1.25rem auto;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 0.30rem solid rgb(84, 107, 138);
+    transition: 0.3s;
+    border-radius: 1rem;
+
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+
+#about {
+    color: rgb(226, 232, 240); 
+    border: 0.30rem solid rgb(71, 85, 105);
+    background: linear-gradient(
+        to right,
+        rgba(15, 42, 42, 0.60),
+        rgba(30, 58, 70, 0.60),
+        rgba(51, 65, 85, 0.60)
+    );
+    
+    width: 90%;
+    min-height: 50vh;
+    padding: 2rem;
+    padding-top: 0.625rem;
+
+}
+
+#about h2 {
+    margin-bottom: 2rem;
+}
+
+
+#skills {
+    width: 90%;
+    min-height: 45vh;
+
+    padding: 2rem;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2rem;
+
+    list-style: none;
+    width: 100%;
+
+    transform: translateY(-5px);
+}
+
+#skills li {
+    background-color: rgba(30, 58, 70, 0.85);
+    color: rgb(226, 232, 240);
+
+    width: 30%;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+
+    border: 0.30rem solid rgb(81, 120, 176);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+}
+
+#skills h2 {
+    margin-bottom: 1.5rem;
+}
+
+
+#projects {
+    color: rgb(226, 232, 240);
+    border: 0.30rem solid rgb(71, 85, 105);
+
+    background: linear-gradient(
+        to right,
+        rgba(15, 42, 42, 0.60),
+        rgba(30, 58, 70, 0.60),
+        rgba(51, 65, 85, 0.60)
+    );
+    padding: 2rem;
+    min-height: 50vh;
+    width: 90%;
+
+}
+
+
+#contact {
+    color: rgb(226, 232, 240);
+    border: 0.15rem solid rgb(71, 85, 105);
+    background-color: rgba(15, 23, 42, 0.85);
+
+    padding: 1rem 2rem;
+    width: 90%;
+    margin: 2.5rem auto;
+}
+
+#contact h2 {
+    margin-bottom: 0.5rem;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+
+footer {
+    color: rgb(203, 213, 225);
+    background-color: rgb(8, 18, 28);
+
+    width: 100%;
+
+    margin: 2rem 0 0;
+    padding: 0.3rem;
+
+    text-align: center;
+
+    font-size: 0.8rem;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0.75rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header h2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    section {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    #about {
+        min-height: 40vh;
+    }
+
+    #skills {
+        min-height: auto;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills li {
+        width: 70%;
+    }
+
+    #projects {
+        width: 95%;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    #contact {
+        width: 100%;
+    }
+}
